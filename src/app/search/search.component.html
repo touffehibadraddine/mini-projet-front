@@ -1,0 +1,20 @@
+<!--
+
+<label for="site-search">Search the site:</label>
+<input  [(ngModel)]="sirene" type="text" id="site-search" name="sirene"
+       aria-label="Search through site content">
+
+<button (click)="onSearch()">Search</button>-->
+ 
+<div class="main-search">
+       <h1>L’Annuaire des Entreprises</h1>
+       <h2 >Retrouvez toutes les informations publiques concernant les entreprises françaises</h2>
+</div>
+       <div class="main-search-input-wrap">
+       <div class="main-search-input fl-wrap" [ngClass]="status ? 'success' : 'danger'">
+           <div class="main-search-input-item"> 
+                  <input   [(ngModel)]="sirene" type="text" id="site-search" name="sirene" placeholder ="Rechercher un SIRENE"  >
+           </div> 
+           <button class="main-search-button" (click)="onSearch()">Rechercher</button>
+       </div>
+   </div>
